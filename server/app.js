@@ -11,8 +11,8 @@ app.use(express.urlencoded({ extended: false }))
 app.use(morgan('dev'))
 app.use(cors())
 
-const clientToken = '794606318486-l11p9bb0drpfpj6eaovmqf9msgb54gk2.apps.googleusercontent.com';
-const oAuth2Client = new OAuth2Client(clientToken, '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')
+const clientToken = '';
+const oAuth2Client = new OAuth2Client(clientToken, '')
 
 async function verify(req, res, next) {
 	const authHeader = req.headers.authorization;
